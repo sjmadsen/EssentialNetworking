@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAC88F4615CD8398004E3191 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC88F4515CD8398004E3191 /* UIKit.framework */; };
+		AAC88F4815CD8398004E3191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC88F4715CD8398004E3191 /* Foundation.framework */; };
+		AAC88F4A15CD8398004E3191 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC88F4915CD8398004E3191 /* CoreGraphics.framework */; };
+		AAC88F5015CD8398004E3191 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAC88F4E15CD8398004E3191 /* InfoPlist.strings */; };
+		AAC88F5215CD8398004E3191 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC88F5115CD8398004E3191 /* main.m */; };
+		AAC88F5615CD8398004E3191 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC88F5515CD8398004E3191 /* AppDelegate.m */; };
+		AAC88F5915CD8398004E3191 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC88F5715CD8398004E3191 /* MainStoryboard.storyboard */; };
+		AAC88F5C15CD8398004E3191 /* LatencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC88F5B15CD8398004E3191 /* LatencyViewController.m */; };
+		AAC88F6315CD8398004E3191 /* ParsingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC88F6215CD8398004E3191 /* ParsingViewController.m */; };
+		AAC88F7815CD87F6004E3191 /* Benchmark.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC88F7715CD87F6004E3191 /* Benchmark.m */; };
+		AAC88F7F15CDC348004E3191 /* batch.json in Resources */ = {isa = PBXBuildFile; fileRef = AAC88F7D15CDC348004E3191 /* batch.json */; };
+		AAC88F8015CDC348004E3191 /* batch.xml in Resources */ = {isa = PBXBuildFile; fileRef = AAC88F7E15CDC348004E3191 /* batch.xml */; };
+		AAC88F8215CDC830004E3191 /* batch.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC88F8115CDC830004E3191 /* batch.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AAC88F4115CD8398004E3191 /* Performance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Performance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC88F4515CD8398004E3191 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AAC88F4715CD8398004E3191 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAC88F4915CD8398004E3191 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AAC88F4D15CD8398004E3191 /* Performance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Performance-Info.plist"; sourceTree = "<group>"; };
+		AAC88F4F15CD8398004E3191 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAC88F5115CD8398004E3191 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAC88F5315CD8398004E3191 /* Performance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Performance-Prefix.pch"; sourceTree = "<group>"; };
+		AAC88F5415CD8398004E3191 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAC88F5515CD8398004E3191 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAC88F5815CD8398004E3191 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AAC88F5A15CD8398004E3191 /* LatencyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LatencyViewController.h; sourceTree = "<group>"; };
+		AAC88F5B15CD8398004E3191 /* LatencyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LatencyViewController.m; sourceTree = "<group>"; };
+		AAC88F6115CD8398004E3191 /* ParsingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParsingViewController.h; sourceTree = "<group>"; };
+		AAC88F6215CD8398004E3191 /* ParsingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParsingViewController.m; sourceTree = "<group>"; };
+		AAC88F7615CD87F6004E3191 /* Benchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Benchmark.h; sourceTree = "<group>"; };
+		AAC88F7715CD87F6004E3191 /* Benchmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Benchmark.m; sourceTree = "<group>"; };
+		AAC88F7915CD88BE004E3191 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AAC88F7C15CD957E004E3191 /* Host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Host.h; path = ../../Host.h; sourceTree = "<group>"; };
+		AAC88F7D15CDC348004E3191 /* batch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = batch.json; path = ../../public/batch.json; sourceTree = "<group>"; };
+		AAC88F7E15CDC348004E3191 /* batch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = batch.xml; path = ../../public/batch.xml; sourceTree = "<group>"; };
+		AAC88F8115CDC830004E3191 /* batch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = batch.plist; path = ../../public/batch.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC88F3E15CD8398004E3191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC88F4615CD8398004E3191 /* UIKit.framework in Frameworks */,
+				AAC88F4815CD8398004E3191 /* Foundation.framework in Frameworks */,
+				AAC88F4A15CD8398004E3191 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAC88F3615CD8398004E3191 = {
+			isa = PBXGroup;
+			children = (
+				AAC88F4B15CD8398004E3191 /* Performance */,
+				AAC88F4415CD8398004E3191 /* Frameworks */,
+				AAC88F4215CD8398004E3191 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC88F4215CD8398004E3191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC88F4115CD8398004E3191 /* Performance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC88F4415CD8398004E3191 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAC88F7915CD88BE004E3191 /* MobileCoreServices.framework */,
+				AAC88F4515CD8398004E3191 /* UIKit.framework */,
+				AAC88F4715CD8398004E3191 /* Foundation.framework */,
+				AAC88F4915CD8398004E3191 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAC88F4B15CD8398004E3191 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				AAC88F4C15CD8398004E3191 /* Supporting Files */,
+				AAC88F5415CD8398004E3191 /* AppDelegate.h */,
+				AAC88F5515CD8398004E3191 /* AppDelegate.m */,
+				AAC88F5715CD8398004E3191 /* MainStoryboard.storyboard */,
+				AAC88F5A15CD8398004E3191 /* LatencyViewController.h */,
+				AAC88F5B15CD8398004E3191 /* LatencyViewController.m */,
+				AAC88F6115CD8398004E3191 /* ParsingViewController.h */,
+				AAC88F6215CD8398004E3191 /* ParsingViewController.m */,
+				AAC88F7615CD87F6004E3191 /* Benchmark.h */,
+				AAC88F7715CD87F6004E3191 /* Benchmark.m */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		AAC88F4C15CD8398004E3191 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC88F4D15CD8398004E3191 /* Performance-Info.plist */,
+				AAC88F4E15CD8398004E3191 /* InfoPlist.strings */,
+				AAC88F5115CD8398004E3191 /* main.m */,
+				AAC88F5315CD8398004E3191 /* Performance-Prefix.pch */,
+				AAC88F7C15CD957E004E3191 /* Host.h */,
+				AAC88F7E15CDC348004E3191 /* batch.xml */,
+				AAC88F7D15CDC348004E3191 /* batch.json */,
+				AAC88F8115CDC830004E3191 /* batch.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAC88F4015CD8398004E3191 /* Performance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC88F6A15CD8398004E3191 /* Build configuration list for PBXNativeTarget "Performance" */;
+			buildPhases = (
+				AAC88F3D15CD8398004E3191 /* Sources */,
+				AAC88F3E15CD8398004E3191 /* Frameworks */,
+				AAC88F3F15CD8398004E3191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Performance;
+			productName = Performance;
+			productReference = AAC88F4115CD8398004E3191 /* Performance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAC88F3815CD8398004E3191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Steven Madsen";
+			};
+			buildConfigurationList = AAC88F3B15CD8398004E3191 /* Build configuration list for PBXProject "Performance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAC88F3615CD8398004E3191;
+			productRefGroup = AAC88F4215CD8398004E3191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAC88F4015CD8398004E3191 /* Performance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAC88F3F15CD8398004E3191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC88F5015CD8398004E3191 /* InfoPlist.strings in Resources */,
+				AAC88F5915CD8398004E3191 /* MainStoryboard.storyboard in Resources */,
+				AAC88F7F15CDC348004E3191 /* batch.json in Resources */,
+				AAC88F8015CDC348004E3191 /* batch.xml in Resources */,
+				AAC88F8215CDC830004E3191 /* batch.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAC88F3D15CD8398004E3191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC88F5215CD8398004E3191 /* main.m in Sources */,
+				AAC88F5615CD8398004E3191 /* AppDelegate.m in Sources */,
+				AAC88F5C15CD8398004E3191 /* LatencyViewController.m in Sources */,
+				AAC88F6315CD8398004E3191 /* ParsingViewController.m in Sources */,
+				AAC88F7815CD87F6004E3191 /* Benchmark.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAC88F4E15CD8398004E3191 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC88F4F15CD8398004E3191 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AAC88F5715CD8398004E3191 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC88F5815CD8398004E3191 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAC88F6815CD8398004E3191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAC88F6915CD8398004E3191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAC88F6B15CD8398004E3191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Performance/Performance-Prefix.pch";
+				INFOPLIST_FILE = "Performance/Performance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AAC88F6C15CD8398004E3191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Performance/Performance-Prefix.pch";
+				INFOPLIST_FILE = "Performance/Performance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAC88F3B15CD8398004E3191 /* Build configuration list for PBXProject "Performance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC88F6815CD8398004E3191 /* Debug */,
+				AAC88F6915CD8398004E3191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC88F6A15CD8398004E3191 /* Build configuration list for PBXNativeTarget "Performance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC88F6B15CD8398004E3191 /* Debug */,
+				AAC88F6C15CD8398004E3191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAC88F3815CD8398004E3191 /* Project object */;
+}

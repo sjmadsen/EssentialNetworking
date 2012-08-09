@@ -1,0 +1,39 @@
+This project contains the demo code for my Essential Cocoa Networking talk,
+first given at CocoaConf Columbus in August 2012.
+
+There are several demos, each with server and client pieces.
+
+NSURLConnectionBasics
+
+This is an iPad app showing off the basic features of NSURLConnection and
+how to use them. It's mostly inteded to run in the simulator, but you can
+run it on the device as long as you change the definition of HOST in Host.h
+to be the DNS name or IP address of your Mac. The synchronous portion of
+this demo only illustrates its point when on the device, in fact, because
+the simulator does not appear to include the watchdog.
+
+The server part for this demo is a Sinatra app. Sinatra is a small Ruby web
+application framework. To install and run:
+
+  1. sudo gem install sinatra
+  2. ruby basics-demo.rb
+
+Performance
+
+This is an iPhone app illustrating the performance gains you can get when
+choosing various ways to access a network resource.
+
+The client fetches simple static files for this demo. I had trouble with
+pipelined requests using a Ruby server, so it's best if you use the Apache
+that comes with Mac OS X, especially for the latency tests. Copy apache.conf
+into /etc/apache2/other and restart Apache with "sudo apachectl restart".
+
+The best way to experience the differences between the different fetch
+styles is to turn on the Network Link Conditioner and run the app on a
+device. If you run in the simulator, you're using loopback networking.
+Without the NLC, you're on a likely good Wi-Fi network. Neither of these
+environments is representative of what your users will experience in the
+real world.
+
+(Additionally, without the NLC, I saw my local Apache mysteriously pausing
+with keep alive requests and often being slower than sequential requests.)

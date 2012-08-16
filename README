@@ -1,6 +1,9 @@
 This project contains the demo code for my Essential Cocoa Networking talk,
 first given at CocoaConf Columbus in August 2012.
 
+The slides are available at
+https://speakerdeck.com/u/sjmadsen/p/essential-cocoa-networking.
+
 There are several demos, each with server and client pieces.
 
 NSURLConnectionBasics

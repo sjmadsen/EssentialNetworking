@@ -18,8 +18,8 @@ the simulator does not appear to include the watchdog.
 The server part for this demo is a Sinatra app. Sinatra is a small Ruby web
 application framework. To install and run:
 
-  1. sudo gem install sinatra
-  2. ruby basics-demo.rb
+  $ bundle
+  $ ruby basics-demo.rb
 
 Performance
 
@@ -33,10 +33,10 @@ into /etc/apache2/other and restart Apache with "sudo apachectl restart".
 
 The best way to experience the differences between the different fetch
 styles is to turn on the Network Link Conditioner and run the app on a
-device. If you run in the simulator, you're using loopback networking.
-Without the NLC, you're on a likely good Wi-Fi network. Neither of these
-environments is representative of what your users will experience in the
-real world.
+device. If you run in the simulator, you're using loopback networking,
+which bypasses the NLC. Without the NLC, you're on a likely good Wi-Fi
+network. Neither of these environments is representative of what your users
+will experience in the real world.
 
 (Additionally, without the NLC, I saw my local Apache mysteriously pausing
 with keep alive requests and often being slower than sequential requests.)

@@ -2,6 +2,7 @@
 # Run it with 'ruby basics-demo.rb'.
 
 require 'rubygems'
+require 'bundler/setup'
 require 'sinatra'
 
 enable :sessions

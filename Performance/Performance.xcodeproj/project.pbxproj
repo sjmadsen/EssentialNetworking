@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA61553517F4A9BC00CB8CA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA61553417F4A9BC00CB8CA0 /* Images.xcassets */; };
 		AAC88F4615CD8398004E3191 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC88F4515CD8398004E3191 /* UIKit.framework */; };
 		AAC88F4815CD8398004E3191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC88F4715CD8398004E3191 /* Foundation.framework */; };
 		AAC88F4A15CD8398004E3191 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC88F4915CD8398004E3191 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA61553417F4A9BC00CB8CA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AAC88F4115CD8398004E3191 /* Performance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Performance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC88F4515CD8398004E3191 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AAC88F4715CD8398004E3191 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +98,7 @@
 				AAC88F5415CD8398004E3191 /* AppDelegate.h */,
 				AAC88F5515CD8398004E3191 /* AppDelegate.m */,
 				AAC88F5715CD8398004E3191 /* MainStoryboard.storyboard */,
+				AA61553417F4A9BC00CB8CA0 /* Images.xcassets */,
 				AAC88F5A15CD8398004E3191 /* LatencyViewController.h */,
 				AAC88F5B15CD8398004E3191 /* LatencyViewController.m */,
 				AAC88F6115CD8398004E3191 /* ParsingViewController.h */,
@@ -175,6 +178,7 @@
 				AAC88F5015CD8398004E3191 /* InfoPlist.strings in Resources */,
 				AAC88F5915CD8398004E3191 /* MainStoryboard.storyboard in Resources */,
 				AAC88F7F15CDC348004E3191 /* batch.json in Resources */,
+				AA61553517F4A9BC00CB8CA0 /* Images.xcassets in Resources */,
 				AAC88F8015CDC348004E3191 /* batch.xml in Resources */,
 				AAC88F8215CDC830004E3191 /* batch.plist in Resources */,
 			);
@@ -221,7 +225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -239,7 +243,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -248,7 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,7 +263,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -269,6 +273,8 @@
 		AAC88F6B15CD8398004E3191 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Performance/Performance-Prefix.pch";
 				INFOPLIST_FILE = "Performance/Performance-Info.plist";
@@ -280,6 +286,8 @@
 		AAC88F6C15CD8398004E3191 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Performance/Performance-Prefix.pch";
 				INFOPLIST_FILE = "Performance/Performance-Info.plist";

@@ -5,8 +5,12 @@ require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
 require 'json'
+require 'digest/md5'
+
+set :show_exceptions, false
 
 enable :sessions
+set :session_secret, 'essential-networking'
 
 helpers do
   def protected!
@@ -70,4 +74,13 @@ get '/random-words.json' do
   @words ||= File.readlines('/usr/share/dict/words').map(&:chomp)
   length = (params[:length] || 8).to_i
   @words.sample(length).to_json
+end
+
+post '/hash' do
+  message = params[:message]
+  if message.is_a? Hash
+    message = message[:tempfile].read
+  end
+
+  Digest::MD5.hexdigest(message)
 end

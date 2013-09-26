@@ -83,6 +83,7 @@
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="4FX-so-VZn"/>
                         <segue destination="OhK-oi-Zxf" kind="relationship" relationship="viewControllers" id="0ad-AA-jUB"/>
+                        <segue destination="nY5-Im-AYQ" kind="relationship" relationship="viewControllers" id="9rZ-1u-c3e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pg7-SD-pSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -154,6 +155,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ud-Q8-3DG" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="974" y="249"/>
+        </scene>
+        <!--Post View Controller - POST-->
+        <scene sceneID="MeZ-cZ-86F">
+            <objects>
+                <viewController id="nY5-Im-AYQ" customClass="PostViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uic-pH-IQm"/>
+                        <viewControllerLayoutGuide type="bottom" id="IPA-Gq-LrI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gvw-S4-wDl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MAj-aI-rZM">
+                                <rect key="frame" x="251" y="33" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use AFNetworking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ji0-du-0gh">
+                                <rect key="frame" x="20" y="38" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drc-7v-Ccf">
+                                <rect key="frame" x="20" y="148" width="280" height="351"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OI-Pj-QUE">
+                                <rect key="frame" x="119" y="110" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="POST /hash">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doRequest:" destination="nY5-Im-AYQ" eventType="touchUpInside" id="nDs-JK-PW9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMi-vE-DJc">
+                                <rect key="frame" x="20" y="72" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0OI-Pj-QUE" firstAttribute="top" secondItem="qMi-vE-DJc" secondAttribute="bottom" constant="8" id="Dr6-uh-vxH"/>
+                            <constraint firstItem="qMi-vE-DJc" firstAttribute="leading" secondItem="gvw-S4-wDl" secondAttribute="leading" constant="20" id="HN7-gp-9ad"/>
+                            <constraint firstItem="drc-7v-Ccf" firstAttribute="leading" secondItem="gvw-S4-wDl" secondAttribute="leading" constant="20" id="IJX-O6-6vt"/>
+                            <constraint firstItem="ji0-du-0gh" firstAttribute="leading" secondItem="gvw-S4-wDl" secondAttribute="leading" constant="20" id="J7f-NH-8jT"/>
+                            <constraint firstAttribute="trailing" secondItem="MAj-aI-rZM" secondAttribute="trailing" constant="20" id="M4t-2C-eB2"/>
+                            <constraint firstItem="ji0-du-0gh" firstAttribute="centerY" secondItem="MAj-aI-rZM" secondAttribute="centerY" id="RSe-VU-kdd"/>
+                            <constraint firstItem="MAj-aI-rZM" firstAttribute="top" secondItem="Uic-pH-IQm" secondAttribute="bottom" constant="13" id="TQb-eV-cOB"/>
+                            <constraint firstItem="drc-7v-Ccf" firstAttribute="top" secondItem="0OI-Pj-QUE" secondAttribute="bottom" constant="8" id="Tqc-fe-WOi"/>
+                            <constraint firstAttribute="trailing" secondItem="qMi-vE-DJc" secondAttribute="trailing" constant="20" id="UYh-D9-5Mg"/>
+                            <constraint firstAttribute="trailing" secondItem="drc-7v-Ccf" secondAttribute="trailing" constant="20" id="W97-du-jLB"/>
+                            <constraint firstItem="qMi-vE-DJc" firstAttribute="top" secondItem="MAj-aI-rZM" secondAttribute="bottom" constant="8" id="agH-3s-nsD"/>
+                            <constraint firstItem="IPA-Gq-LrI" firstAttribute="top" secondItem="drc-7v-Ccf" secondAttribute="bottom" constant="20" id="bj2-82-WlA"/>
+                            <constraint firstAttribute="centerX" secondItem="0OI-Pj-QUE" secondAttribute="centerX" id="k9p-0R-jFC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="POST" id="DZT-eX-TtB"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="qMi-vE-DJc" id="ZMS-4t-ArK"/>
+                        <outlet property="textView" destination="drc-7v-Ccf" id="S2I-vf-78F"/>
+                        <outlet property="useAFN" destination="MAj-aI-rZM" id="5YF-xW-yq9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JwY-0z-urX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="955"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

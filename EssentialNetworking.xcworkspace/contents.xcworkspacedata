@@ -2,10 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NSURLConnectionBasics/NSURLConnectionBasics.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:FoundationOrAFN/FoundationOrAFN.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:NSURLConnectionBasics/NSURLConnectionBasics.xcodeproj">
+      location = "group:NSURLSessionBasics/NSURLSessionBasics.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Performance/Performance.xcodeproj">

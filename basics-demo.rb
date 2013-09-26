@@ -4,6 +4,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
+require 'json'
 
 enable :sessions
 
@@ -41,4 +42,31 @@ end
 get '/tarpit' do
   sleep 90
   send_file 'public/image-0.jpg'
+end
+
+unless Array.respond_to? :sample
+  require 'securerandom'
+
+  class Array
+    # Unlike 1.9.x, this implementation can return duplicates, but it's good
+    # enough for demo purposes.
+    def sample(n = 1)
+      n = [n, self.length].min
+      n.times.collect do
+        self[SecureRandom.random_number(self.length)]
+      end
+    end
+  end
+end
+
+get '/random-words' do
+  @words ||= File.readlines('/usr/share/dict/words').map(&:chomp)
+  length = (params[:length] || 8).to_i
+  @words.sample(length).join(' ')
+end
+
+get '/random-words.json' do
+  @words ||= File.readlines('/usr/share/dict/words').map(&:chomp)
+  length = (params[:length] || 8).to_i
+  @words.sample(length).to_json
 end

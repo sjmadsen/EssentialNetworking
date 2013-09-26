@@ -66,6 +66,7 @@ get '/random-words' do
 end
 
 get '/random-words.json' do
+  content_type :json
   @words ||= File.readlines('/usr/share/dict/words').map(&:chomp)
   length = (params[:length] || 8).to_i
   @words.sample(length).to_json

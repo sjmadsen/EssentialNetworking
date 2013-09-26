@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA6154EF17F46F1200CB8CA0 /* JSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6154EE17F46F1200CB8CA0 /* JSONViewController.m */; };
 		AAEED82D17F3D41B002431D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEED82C17F3D41B002431D0 /* Foundation.framework */; };
 		AAEED82F17F3D41B002431D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEED82E17F3D41B002431D0 /* CoreGraphics.framework */; };
 		AAEED83117F3D41B002431D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAEED83017F3D41B002431D0 /* UIKit.framework */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA6154ED17F46F1200CB8CA0 /* JSONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONViewController.h; sourceTree = "<group>"; };
+		AA6154EE17F46F1200CB8CA0 /* JSONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONViewController.m; sourceTree = "<group>"; };
 		AAEED82917F3D41B002431D0 /* FoundationOrAFN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationOrAFN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEED82C17F3D41B002431D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AAEED82E17F3D41B002431D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +118,8 @@
 				AAEED83E17F3D41B002431D0 /* Main.storyboard */,
 				AAEED84117F3D41B002431D0 /* GetViewController.h */,
 				AAEED84217F3D41B002431D0 /* GetViewController.m */,
+				AA6154ED17F46F1200CB8CA0 /* JSONViewController.h */,
+				AA6154EE17F46F1200CB8CA0 /* JSONViewController.m */,
 				AAEED84417F3D41B002431D0 /* Images.xcassets */,
 				AAEED83317F3D41B002431D0 /* Supporting Files */,
 			);
@@ -227,6 +232,7 @@
 				AAEED89417F3D78E002431D0 /* AFImageRequestOperation.m in Sources */,
 				AAEED84317F3D41B002431D0 /* GetViewController.m in Sources */,
 				AAEED89717F3D78E002431D0 /* AFPropertyListRequestOperation.m in Sources */,
+				AA6154EF17F46F1200CB8CA0 /* JSONViewController.m in Sources */,
 				AAEED83D17F3D41B002431D0 /* AppDelegate.m in Sources */,
 				AAEED89817F3D78E002431D0 /* AFURLConnectionOperation.m in Sources */,
 				AAEED89917F3D78E002431D0 /* AFXMLRequestOperation.m in Sources */,

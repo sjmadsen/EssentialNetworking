@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="249"/>
+            <point key="canvasLocation" x="974" y="-445"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="g5D-OD-LLF">
@@ -82,11 +82,78 @@
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="4FX-so-VZn"/>
+                        <segue destination="OhK-oi-Zxf" kind="relationship" relationship="viewControllers" id="0ad-AA-jUB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pg7-SD-pSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="398" y="249"/>
+        </scene>
+        <!--View Controller - JSON-->
+        <scene sceneID="UyO-OF-ZBq">
+            <objects>
+                <viewController id="OhK-oi-Zxf" customClass="JSONViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u1R-z4-X5C"/>
+                        <viewControllerLayoutGuide type="bottom" id="Guj-0X-dap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nXK-Of-6hb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oME-le-tzs">
+                                <rect key="frame" x="251" y="33" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use AFNetworking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22M-zi-2wK">
+                                <rect key="frame" x="20" y="38" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eon-8U-NE9">
+                                <rect key="frame" x="20" y="117" width="280" height="382"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTD-JB-PTT">
+                                <rect key="frame" x="74" y="79" width="173" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GET /random-words.json">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doRequest:" destination="OhK-oi-Zxf" eventType="touchUpInside" id="m8c-64-34A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uTD-JB-PTT" firstAttribute="top" secondItem="oME-le-tzs" secondAttribute="bottom" constant="15" id="1UM-hj-dfv"/>
+                            <constraint firstItem="Eon-8U-NE9" firstAttribute="leading" secondItem="nXK-Of-6hb" secondAttribute="leading" constant="20" id="3eU-Uf-95V"/>
+                            <constraint firstAttribute="centerX" secondItem="uTD-JB-PTT" secondAttribute="centerX" id="8x9-ra-sn8"/>
+                            <constraint firstItem="22M-zi-2wK" firstAttribute="leading" secondItem="nXK-Of-6hb" secondAttribute="leading" constant="20" id="Jys-Dm-tVt"/>
+                            <constraint firstAttribute="trailing" secondItem="oME-le-tzs" secondAttribute="trailing" constant="20" id="NIR-Qt-hQB"/>
+                            <constraint firstItem="oME-le-tzs" firstAttribute="top" secondItem="u1R-z4-X5C" secondAttribute="bottom" constant="13" id="W5r-Ix-rJQ"/>
+                            <constraint firstItem="Eon-8U-NE9" firstAttribute="top" secondItem="uTD-JB-PTT" secondAttribute="bottom" constant="8" id="a6D-aB-LUc"/>
+                            <constraint firstItem="22M-zi-2wK" firstAttribute="centerY" secondItem="oME-le-tzs" secondAttribute="centerY" id="aw4-ga-PRE"/>
+                            <constraint firstItem="Guj-0X-dap" firstAttribute="top" secondItem="Eon-8U-NE9" secondAttribute="bottom" constant="20" id="dXU-v6-caa"/>
+                            <constraint firstAttribute="trailing" secondItem="Eon-8U-NE9" secondAttribute="trailing" constant="20" id="ek1-a5-pv1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="JSON" id="WoN-GD-30E"/>
+                    <connections>
+                        <outlet property="textView" destination="Eon-8U-NE9" id="PKY-5w-uTN"/>
+                        <outlet property="useAFN" destination="oME-le-tzs" id="4Sl-tb-deg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ud-Q8-3DG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="249"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

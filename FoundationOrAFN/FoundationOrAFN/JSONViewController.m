@@ -48,9 +48,9 @@
     [NSURLConnection sendAsynchronousRequest:[self makeRequest] queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *json, NSError *connectionError) {
         if (json) {
             NSError *error;
-            id things = [NSJSONSerialization JSONObjectWithData:json options:0 error:&error];
-            if (things) {
-                [self updateTextViewWithThings:things];
+            id words = [NSJSONSerialization JSONObjectWithData:json options:0 error:&error];
+            if (words) {
+                [self updateTextViewWithWords:words];
             } else {
                 [self updateTextViewWithError:error];
             }
@@ -63,14 +63,14 @@
 - (void)doRequestWithAFN
 {
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:[self makeRequest] success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-        [self updateTextViewWithThings:JSON];
+        [self updateTextViewWithWords:JSON];
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         [self updateTextViewWithError:error];
     }];
     [operation start];
 }
 
-- (void)updateTextViewWithThings:(id)things
+- (void)updateTextViewWithWords:(id)things
 {
     self.textView.text = [NSString stringWithFormat:@"%@", things];
 }

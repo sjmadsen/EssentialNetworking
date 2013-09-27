@@ -60,12 +60,22 @@
 #if 1 // application/x-www-form-urlencoded
 
     {
-    [request setValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     NSString *parameters = [NSString stringWithFormat:@"message=%@", [self.messageTextField.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     [request setHTTPBody:[parameters dataUsingEncoding:NSUTF8StringEncoding]];
     }
 
 #else // multipart/form-data
+
+    /*
+     Content-Type: multipart/form-data; boundary=abc
+
+     --abc
+     Content-Disposition: form-data; name="message"; filename="message.txt"
+     Content-Type: text/plain; charset=utf-8
+
+     message value here
+     --abc--
+     */
 
     {
     NSString *boundary = [[NSUUID UUID] UUIDString];
@@ -117,11 +127,12 @@
     NSMutableURLRequest *request = [client multipartFormRequestWithMethod:@"POST" path:@"hash" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         [formData appendPartWithFormData:[self.messageTextField.text dataUsingEncoding:NSUTF8StringEncoding] name:@"message"];
     }];
-    [client enqueueHTTPRequestOperation:[client HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [self updateTextViewWithData:responseObject];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [self updateTextViewWithError:error];
-    }]];
+    AFHTTPRequestOperation *operation = [client HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            [self updateTextViewWithData:responseObject];
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            [self updateTextViewWithError:error];
+        }];
+    [client enqueueHTTPRequestOperation:operation];
     }
 
 #endif
